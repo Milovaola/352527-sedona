@@ -75,10 +75,40 @@
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button class="find_hotels">Поиск гостиницы в Седоне</button>
-        <!--Здесь будет форма-->
+        <form class="finder_form" action="https://echo.htmlacademy.ru" method="POST">
+          <p class="finder_item">
+            <label>Дата заезда:
+              <input type="date" name="date_check" value="24 апреля 2017">
+            </label>
+          </p>
+          <p class="finder_item">
+            <label>Дата выезда:
+              <input type="date" name="date_checkout" value="4 июля 2017">
+            </label>
+          </p>
+          <p class="finder_item">
+            <label>Взрослые:
+              <div class="adults">
+                <input type="number" name="adults" value="2" min="0">
+                <button class="lot_min">-</button>
+                <button class="lot_max">+</button>
+              </div>
+            </label>
+          </p>
+          <p class="finder_item">
+            <label>Дети:
+              <div class="kids">
+                <input type="number" name="kids" value="0" min="0">
+                <button class="lot_min">-</button>
+                <button class="lot_max">+</button>
+              </div>
+            </label>
+          </p>
+          <button class="search" type="submit">Найти</button>
+        </form>
       </section>
       <section class="modal modal-map">
-        <h2 class="visualy_hidden">Карта</h2>
+        <h2 class="visually_hidden">Карта</h2>
       </section>
     </main>
     <footer class="main-footer">
