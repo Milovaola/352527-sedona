@@ -23,7 +23,48 @@
       <h1 class="visually-hidden">Выбор отеля</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
-        <!--Здесь будет форма-->
+        <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
+          <fieldset class="infrastructure">
+            <legend>Инфраструктура</legend>
+            <ul>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" checked> Бассейн
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking"> Парковка
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi_fi"> wi-fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="type_of_apartmnets">
+            <legend>Тип жилья</legend>
+            <ul>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" checked> Гостиница
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" checked> Мотель
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartmnets" checked> Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
       </section>
       <section class="graduation">
         <span class="search">Найдено: 3</span>
