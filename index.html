@@ -32,7 +32,7 @@
           <article class="real_city">
             <h2>Настоящий городок</h2>
             <p>— №1 — Седона — не аттракцион для туристов, там течет своя жизнь</p>
-            <img src="img\content\real_city.jpg" width="800" height="401" alt="Фото здания">
+            <img src="img/content/real_city.jpg" width="800" height="401" alt="Фото здания">
           </article>
         </section>
         <section class="reason-item2">
@@ -50,7 +50,7 @@
           </article>
         </section>
         <section class="reason-item3">
-          <img src="img\content\bridge_of_devil.jpg" width="800" height="400" alt="Мост дъявола">
+          <img src="img/content/bridge_of_devil.jpg" width="800" height="400" alt="Мост дъявола">
           <article class="bridge_of_devil">
             <h2>Там есть Мост дьявола</h2>
             <p>— №2 — Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -76,34 +76,32 @@
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button class="find_hotels">Поиск гостиницы в Седоне</button>
         <form class="finder_form" action="https://echo.htmlacademy.ru" method="POST">
-          <p class="finder_item">
+          <div class="finder_item">
             <label>Дата заезда:
-              <input type="date" name="date_check" value="24 апреля 2017">
+              <input type="date" name="date_check" value="2017-04-24">
             </label>
-          </p>
-          <p class="finder_item">
+          </div>
+          <div class="finder_item">
             <label>Дата выезда:
-              <input type="date" name="date_checkout" value="4 июля 2017">
+              <input type="date" name="date_checkout" value="2017-07-04">
             </label>
-          </p>
-          <p class="finder_item">
-            <label>Взрослые:
-              <div class="adults">
-                <input type="number" name="adults" value="2" min="0">
-                <button class="lot_min">-</button>
-                <button class="lot_max">+</button>
-              </div>
-            </label>
-          </p>
-          <p class="finder_item">
-            <label>Дети:
-              <div class="kids">
-                <input type="number" name="kids" value="0" min="0">
-                <button class="lot_min">-</button>
-                <button class="lot_max">+</button>
-              </div>
-            </label>
-          </p>
+          </div>
+          <div class="finder_item">
+            <label for="lot_adults">Взрослые:</label>
+            <div class="adults">
+              <input type="number" name="adults" value="2" min="0" id="lot_adults">
+              <button class="lot_min">-</button>
+              <button class="lot_max">+</button>
+            </div>
+          </div>
+          <div class="finder_item">
+            <label for="lot_kids">Дети:</label>
+            <div class="kids">
+              <input type="number" name="kids" value="0" min="0" id="lot_kids">
+              <button class="lot_min">-</button>
+              <button class="lot_max">+</button>
+            </div>
+          </div>
           <button class="search" type="submit">Найти</button>
         </form>
       </section>
