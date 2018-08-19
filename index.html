@@ -77,29 +77,27 @@
         <button class="find_hotels">Поиск гостиницы в Седоне</button>
         <form class="finder_form" action="https://echo.htmlacademy.ru" method="POST">
           <div class="finder_item">
-            <label>Дата заезда:
-              <input type="date" name="date_check" value="2017-04-24">
-            </label>
+            <label for="date_in">Дата заезда:</label>
+            <input type="date" id="date_in" name="date_check" value="2017-04-24">
           </div>
           <div class="finder_item">
-            <label>Дата выезда:
-              <input type="date" name="date_checkout" value="2017-07-04">
-            </label>
+            <label for="date_out">Дата заезда:</label>
+            <input type="date" id="date_out" name="date_checkout" value="2017-07-04">
           </div>
           <div class="finder_item">
             <label for="lot_adults">Взрослые:</label>
             <div class="adults">
+              <button class="lot_min" type="button">-</button>
               <input type="number" name="adults" value="2" min="0" id="lot_adults">
-              <button class="lot_min">-</button>
-              <button class="lot_max">+</button>
+              <button class="lot_max" type="button">+</button>
             </div>
           </div>
           <div class="finder_item">
             <label for="lot_kids">Дети:</label>
             <div class="kids">
+              <button class="lot_min" type="button">-</button>
               <input type="number" name="kids" value="0" min="0" id="lot_kids">
-              <button class="lot_min">-</button>
-              <button class="lot_max">+</button>
+              <button class="lot_max" type="button">+</button>
             </div>
           </div>
           <button class="search" type="submit">Найти</button>
