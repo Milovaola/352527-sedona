@@ -1,0 +1,189 @@
+body {
+  margin: 0%;
+  padding: 0%;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700px;
+  color: #000000;
+  text-transform: uppercase;
+
+  background: #e9eef0;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  color: #000000;
+  background: #ffffff;
+}
+.main-navigation {
+  line-height: 26px;
+  color: #000000;
+
+  background-color: #ffff;
+}
+.main-navigation a {
+color: #000000;
+}
+.main-navigation a:hover {
+  color: #81b3d2;
+}
+.main-navigation a:active {
+  color: #fbfbfb;
+}
+
+.site-navigation-current a {
+  color: #766357;
+}
+.info h1 {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+.info p {
+  text-align: center;
+}
+.reasons h2 {
+  font-size: 21px;
+  line-height: 26px;
+}
+.reasons p {
+  font-size: 14px;
+  line-height: 26px;
+}
+.reason-item1, .reason-item3 {
+  background-color: #84b5d3;
+  color: #ffffff;
+  text-align: center;
+}
+.reason-item2 {
+  background-color: #ffffff;
+  color: #333333;
+  text-align: center;
+}
+.reason-item4 {
+  background-color: #eeeeee;
+  color: #333333;
+  text-align: center;
+}
+.modal h2 {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+.modal p {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+.button {
+  font: inherit;
+  text-align: center;
+
+  border: none;
+}
+.lot_min,
+.lot_max {
+  color: #8d7d73;
+}
+.lot_min:hover,
+.lot_max:hover {
+  color: #000000;
+}
+.lot_min:active,
+.lot_max:active {
+  color: #81b0cd;
+}
+
+.find_hotels {
+  background-color: #8d7d73;
+  color: #ffffff;
+}
+.find_hotels:hover {
+  background-color: #6e5e54;
+  color: #ffffff;
+}
+.find_hotels:active {
+  background-color: #67574d;
+  color: #ffffff;
+}
+.finder_item {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.finder_item input {
+  background-color: transparent;
+}
+.date_in, .date_out {
+  background-color: #f7f7f7;
+}
+.date_in:hover,
+.date_out:hover {
+  background-color: #f0f0f0;
+}
+.date_in:active,
+.date_out:active {
+  background-color: #fdfdfd;
+}
+.search {
+  background-color: #81b0cd;
+  color: #ffffff;
+}
+.search:hover {
+  background-color: #6ca2c2;
+  color: #ffffff;
+}
+.search:active {
+  background-color: #5496bd;
+  color: #ffffff;
+}
+.main-footer {
+  background-color: rgba(249, 250, 245, 0.9);
+}
+.footer-social {
+  text-align: center;
+}
+.footer-social ul {
+  list-style: none;
+}
+.social-button {
+  background-color: #81b0cd;
+  color: #f9faf5;
+}
+.social-button:hover {
+  background-color: #6ca2c2;
+  color: #ffffff;
+}
+.social-button:active{
+  background-color: #5496bd;
+  color: #ffffff;
+}
+.footer-copyright {
+  text-align: center;
+}
+.filters {
+  background-image: url(img/background/filter_background.jpg);
+  background-repeat: no-repeat;
+}
+.infrastructure,
+.type_of_apartmnets {
+  border: none;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700px;
+  color: #ffffff;
+  text-align: left;
+}
+.infrastructure ul,
+.type_of_apartmnets ul {
+  list-style: none;
+}
+.filter-option {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400px;
+}
