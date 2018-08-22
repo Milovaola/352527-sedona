@@ -5,7 +5,7 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
-  font-weight: 700px;
+  font-weight: 400px;
   color: #000000;
   text-transform: uppercase;
 
@@ -32,7 +32,7 @@ color: #000000;
   color: #81b3d2;
 }
 .main-navigation a:active {
-  color: #fbfbfb;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .site-navigation-current a {
@@ -79,12 +79,6 @@ color: #000000;
   line-height: 26px;
   text-align: center;
 }
-.button {
-  font: inherit;
-  text-align: center;
-
-  border: none;
-}
 .lot_min,
 .lot_max {
   color: #8d7d73;
@@ -104,11 +98,10 @@ color: #000000;
 }
 .find_hotels:hover {
   background-color: #6e5e54;
-  color: #ffffff;
 }
 .find_hotels:active {
   background-color: #67574d;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.3);
 }
 .finder_item {
   font-size: 14px;
@@ -129,20 +122,33 @@ color: #000000;
 .date_out:active {
   background-color: #fdfdfd;
 }
-.search {
+  input[type="date"] {
+     color:#000000;
+     font-size: 14px;
+     line-height: 26px;
+     font-weight: bold;
+    }
+
+button.search_hotels {
   background-color: #81b0cd;
   color: #ffffff;
 }
-.search:hover {
+button.search_hotels:hover {
   background-color: #6ca2c2;
-  color: #ffffff;
 }
-.search:active {
+button.search_hotels:active {
   background-color: #5496bd;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.3);
 }
 .main-footer {
   background-color: rgba(249, 250, 245, 0.9);
+}
+.tag_sedona {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700px;
+  color: #000000;
+  text-transform: uppercase;
 }
 .footer-social {
   text-align: center;
@@ -156,11 +162,10 @@ color: #000000;
 }
 .social-button:hover {
   background-color: #6ca2c2;
-  color: #ffffff;
 }
 .social-button:active{
   background-color: #5496bd;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.3);
 }
 .footer-copyright {
   text-align: center;
@@ -168,6 +173,8 @@ color: #000000;
 .filters {
   background-image: url(img/background/filter_background.jpg);
   background-repeat: no-repeat;
+  background-color: #5496bd;
+  color: #ffffff;
 }
 .infrastructure,
 .type_of_apartmnets {
@@ -175,7 +182,6 @@ color: #000000;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700px;
-  color: #ffffff;
   text-align: left;
 }
 .infrastructure ul,
@@ -186,4 +192,127 @@ color: #000000;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400px;
+}
+.filter-input:hover+label {
+  color: #e9eef0;
+}
+.filter-input:disabled+label {
+  color: #e9eef0;
+  opacity: 0.5;
+}
+input[class="price"], button.show {
+  display: inline-block;
+  height: 40px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400px;
+  text-transform: uppercase;
+}
+input[class="price"] {
+  width: 114px;
+}
+button.show {
+  width: 141px;
+}
+
+button.show:hover,
+button.show:active {
+  background-color: #fff;
+  color: #000;
+}
+
+.graduation a {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400px;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dashed;
+}
+.search {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700px;
+  color: #000000;
+}
+.graduation-type a:hover {
+  color: #81b3d2;
+}
+.graduation-type a:active {
+  color: #000000;
+  text-decoration: none;
+}
+.graduation-title {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400px;
+}
+.catalog-item-description h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700px;
+  color: #000000;
+}
+.catalog-item-description:hover h3 {
+  color: #6ca2c2;
+}
+.catalog-item-description:active h3 {
+  color: rgba(0, 0, 0, 0.3);
+}
+.button {
+  display: inline-block;
+  outline: none;
+  height: 27px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700px;
+  text-transform: uppercase;
+}
+.button-more {
+  width: 110px;
+  background-color: #81b0cd;
+}
+.button-more:hover {
+  background-color: #6ca2c2;
+}
+.button-more:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+.button-reserve {
+  width: 142px;
+  background-color: #8d7d73;
+}
+.button-reserve:hover {
+  background-color: #6e5e54;
+}
+.button-reserve:active {
+  background-color: #67574d;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+.icon_html-academy {
+  height: 39px;
+  width: 113px;
+  color: black
+}
+.icon_html-academy:hover {
+  color: #81b3d2;
+}
+.icon_html-academy:active {
+  color: #bdbbbc;
 }
