@@ -6,7 +6,7 @@
   <title>CITY OF SEDONA</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -81,17 +81,17 @@
         <form class="finder_form" action="https://echo.htmlacademy.ru" method="POST">
           <div class="finder_item">
             <label for="date_in">Дата заезда:</label>
-            <input type="date" id="date_in" name="date_check"  value="2017-04-24">
+            <input type="date" id="date_in" name="date_check" value="2017-04-24" class="date">
           </div>
           <div class="finder_item">
             <label for="date_out">Дата выезда:</label>
-            <input type="date" id="date_out" name="date_checkout" value="2017-07-04">
+            <input type="date" id="date_out" name="date_checkout" value="2017-07-04" class="date">
           </div>
           <div class="finder_item">
             <label for="lot_adults">Взрослые:</label>
             <div class="adults">
               <button class="lot_min" type="button">-</button>
-              <input type="number" name="adults" value="2" min="0" id="lot_adults">
+              <input type="number" name="adults" value="2" min="0" id="lot_adults" class="number">
               <button class="lot_max" type="button">+</button>
             </div>
           </div>
@@ -99,7 +99,7 @@
             <label for="lot_kids">Дети:</label>
             <div class="kids">
               <button class="lot_min" type="button">-</button>
-              <input type="number" name="kids" value="0" min="0" id="lot_kids">
+              <input type="number" name="kids" value="0" min="0" id="lot_kids" class="number">
               <button class="lot_max" type="button">+</button>
             </div>
           </div>
