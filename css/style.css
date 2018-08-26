@@ -285,7 +285,7 @@ button.show:active {
   line-height: 18px;
   font-weight: 400px;
   color: rgba(0, 0, 0, 0.3);
-  border-bottom: 1px dashed;
+  border-bottom: 1px dotted;
 }
 .search {
   font-size: 21px;
@@ -368,3 +368,184 @@ button.show:active {
 .icon_html-academy:active {
   color: #bdbbbc;
 }
+/* ----- Сеточные стили ----- */
+
+
+html,
+body {
+  min-width: 1280px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.main-header {
+  width: 100%;
+  position: relative;
+
+
+}
+.mini-logo {
+  width: 140px;
+  align-self: flex-start;
+}
+
+.main-navigation {
+  background-color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 0 73px;
+  margin-bottom: -20px;
+  min-height: 56px;
+}
+.preview {
+  padding-top: 75px;
+  padding-bottom: 130px;
+  margin-bottom: 60px;
+}
+.info {
+  width: 495px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 350px;
+  margin-right: 350px;
+}
+.reasons {
+  width: 1200px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.reason-item1 {
+  display: flex;
+  align-items: center;
+}
+.real_city {
+  width: 400px;
+  padding: 0 60px;
+  display: border-box;
+}
+.reason-item2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 73px 90px;
+  display: border-box;
+}
+.reason-item2-inner {
+  width: 300px;
+}
+.reason-item3 {
+  display: flex;
+  align-items: center;
+}
+.bridge_of_devil {
+  width: 400px;
+  padding: 0 40px;
+  display: border-box;
+}
+.reason-item4 {
+  display: flex;
+  justify-content: space-between;
+  padding: 49px 90px 65px;
+  display: border-box;
+  margin-bottom: 59px;
+}
+.reason-item4-inner {
+  width: 270px;
+}
+.modal-suggestion {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: baseline;
+  padding: 0 313px;
+}
+.main-footer  {
+  display: flex;
+  padding: 37px 101px 37px 131px;
+
+}
+
+.tag_sedona {
+  width: 132px;
+  margin: 0;
+  margin-right: 260px;
+}
+
+.footer-social {
+  width: 150px;
+}
+
+.footer-copyright {
+  width: 200px;
+  margin: 0;
+  margin-left: auto;
+}
+
+.filter  {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 32px 73px;
+  margin-bottom: 35px;
+}
+
+.infrastructure {
+  width: 140px;
+  margin: 0;
+  margin-right: 114px;
+}
+.infrastructure ul,
+.type_of_apartmnets ul {
+  padding: 0;
+}
+.type_of_apartmnets {
+  width: 140px;
+}
+.price_of_day {
+  width: 317px;
+  margin: 0;
+  margin-left: auto;
+}
+.graduation {
+  padding:  0 73px;
+  margin-bottom: 65px;
+}
+.catalog {
+  padding: 0 73px;
+  margin-bottom: 66px;
+
+}
+.amara_resort,
+.desert,
+.villas {
+  width: 1056px;
+  display: flex;
+}
+.catalog-item-description {
+  padding-right: 420px;
+  display: flex;
+}
+.foto1,
+.foto2,
+.foto3 {
+  margin-right: 30px;
+  margin-bottom: 61px;
+}
+.details {
+  width: 142px;
+  margin: 0;
+  margin-right: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.catalog-item-rating {
+  width: 110px;
+  margin: 0;
+  margin-left: auto;
+}
+
+
