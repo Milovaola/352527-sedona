@@ -451,16 +451,15 @@ body {
 .real_city {
   width: 400px;
   padding: 0 60px;
-  display: border-box;
+  box-sizing: border-box;
 }
 .reason-item2 {
   display: flex;
   justify-content: space-between;
-  padding: 60px 73px 90px;
-  display: border-box;
+  box-sizing: border-box;
 }
 .reason-item2-inner {
-  width: 300px;
+  padding: 60px 73px 90px;
 }
 .reason-item3 {
   display: flex;
@@ -474,12 +473,11 @@ body {
 .reason-item4 {
   display: flex;
   justify-content: space-between;
-  padding: 49px 90px 65px;
   display: border-box;
   margin-bottom: 59px;
 }
 .reason-item4-inner {
-  width: 270px;
+  padding: 49px 90px 65px;
 }
 .hidden {
   display: none;
