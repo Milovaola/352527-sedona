@@ -98,15 +98,18 @@ a {
   line-height: 26px;
   text-align: center;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .lot_min:hover,
 .lot_max:hover {
   color: #000000;
+  cursor: pointer;
 }
 .lot_min:active,
 .lot_max:active {
   color: #81b0cd;
+  cursor: pointer;
 }
 .number {
   left: 561px;
@@ -133,13 +136,16 @@ a {
   width: 568px;
   height: 86px;
   outline: none;
+  cursor: pointer;
 }
 .find_hotels:hover {
   background-color: #6e5e54;
+  cursor: pointer;
 }
 .find_hotels:active {
   background-color: #67574d;
   color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
 
 .finder_item {
@@ -152,14 +158,17 @@ a {
 }
 .date_in, .date_out {
   background-color: #f7f7f7;
+  cursor: pointer;
 }
 .date_in:hover,
 .date_out:hover {
   background-color: #f0f0f0;
+  cursor: pointer;
 }
 .date_in:active,
 .date_out:active {
   background-color: #fdfdfd;
+  cursor: pointer;
 }
 .date {
   left: 523px;
@@ -184,13 +193,16 @@ a {
   top: 2451px;
   width: 458px;
   height: 58px;
+  cursor: pointer;
 }
 .search_hotels:hover {
   background-color: #6ca2c2;
+  cursor: pointer;
 }
 .search_hotels:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
 .main-footer {
   background-color: rgba(249, 250, 245, 0.9);
@@ -272,12 +284,14 @@ input[class="price"] {
 }
 button.show {
   width: 141px;
+  cursor: pointer;
 }
 
 button.show:hover,
 button.show:active {
   background-color: #fff;
   color: #000;
+  cursor: pointer;
 }
 
 .graduation a {
@@ -305,17 +319,20 @@ button.show:active {
   line-height: 18px;
   font-weight: 400px;
 }
-.catalog-item-description h3 {
+.catalog-item-title {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700px;
   color: #000000;
+  cursor: pointer;
 }
-.catalog-item-description:hover h3 {
+.catalog-item-title:hover {
   color: #6ca2c2;
+  cursor: pointer;
 }
-.catalog-item-description:active h3 {
+.catalog-item-title:active {
   color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 .button {
   display: inline-block;
@@ -327,28 +344,35 @@ button.show:active {
   line-height: 21px;
   font-weight: 700px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .button-more {
   width: 110px;
   background-color: #81b0cd;
+  cursor: pointer;
 }
 .button-more:hover {
   background-color: #6ca2c2;
+  cursor: pointer;
 }
 .button-more:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
 .button-reserve {
   width: 142px;
   background-color: #8d7d73;
+  cursor: pointer;
 }
 .button-reserve:hover {
   background-color: #6e5e54;
+  cursor: pointer;
 }
 .button-reserve:active {
   background-color: #67574d;
   color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
 
 .icon {
