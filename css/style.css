@@ -255,44 +255,106 @@ a {
 .type-of-apartmnets ul {
   list-style: none;
 }
-.filter-option {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400px;
-}
-.filter-input:hover+label {
-  color: #e9eef0;
-}
-.filter-input:disabled+label {
-  color: #e9eef0;
-  opacity: 0.5;
-}
-input[class="price"], button.show {
-  display: inline-block;
-  height: 40px;
-  color: #fff;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.1);
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 400px;
+.price-of-day {
+  width: 330px;
+  margin: 30px auto;
+  color: #ffffff;
   text-transform: uppercase;
 }
-input[class="price"] {
-  width: 114px;
+.price-of-day-title {
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
 }
-button.show {
-  width: 141px;
+.price-controls {
+  height: 36px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  font-size: 0;
+  position: relative;
 }
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+}
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+.price-controls .price-min,
+.price-controls .price-max {
+  width: 90px;
+  padding-left: 65px;
+}
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+.range-price {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+.range-price:hover {
+  background: #1c4f80;
+}
+.range-price-min {
+  left: 0;
+}
+.range-price-max {
+  left: 80%;
+}
+.show {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
 
-button.show:hover,
-button.show:active {
-  background-color: #fff;
-  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+.show:hover {
+  color: #000000;
+  background: #ffffff;
 }
 
 .graduation a {
@@ -391,7 +453,7 @@ button.show:active {
 
 html,
 body {
-  min-width: 1280px;
+  min-width: 1200px;
 }
 .container {
   width: 1200px;
@@ -423,6 +485,7 @@ body {
 .reason-item1 {
   display: flex;
   align-items: center;
+  margin-bottom: 160px;
 }
 .real-city {
   width: 400px;
@@ -435,7 +498,10 @@ body {
   box-sizing: border-box;
 }
 .reason-item2-inner {
-  padding: 60px 73px 90px;
+  padding: 0;
+  padding-left: 73px;
+  padding-right: 63px;
+  margin-bottom: 85px;
 }
 .reason-item3 {
   display: flex;
