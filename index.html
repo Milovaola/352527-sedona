@@ -12,7 +12,7 @@
 <body>
   <div class="container">
     <header class="main-header">
-      <a class="mini_logo" href="index.html">
+      <a class="mini-logo" href="index.html">
         <img src="img/content/logo.svg" width="140" height="70" alt="Логотип CITY OF SEDONA">
       </a>
       <nav class="main-navigation">
@@ -21,18 +21,18 @@
         <a class="site-navigation" href="map.html">Карта штата</a>
         <a class="site-navigation" href="hotels.html">Гостиницы</a>
       </nav>
-      <section class="preview">
-        <img src="img/content/welcome.png" width="459" height="353" alt="Добро пожаловать">
-      </section>
     </header>
     <main>
+        <section class="preview">
+            <img src="img/content/welcome.png" width="459" height="353" alt="Добро пожаловать">
+          </section>
       <section class="info">
         <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       <section class="reasons">
         <section class="reason-item1">
-          <article class="real_city">
+          <article class="real-city">
             <h2>Настоящий городок</h2>
             <p>— №1 —</p>
             <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
@@ -55,7 +55,7 @@
         </section>
         <section class="reason-item3">
           <img src="img/content/bridge_of_devil.jpg" width="800" height="256" alt="Мост дъявола">
-          <article class="bridge_of_devil">
+          <article class="bridge-of-devil">
             <h2>Там есть
               <br> Мост дьявола</h2>
             <p>— №2 —</p>
@@ -88,33 +88,33 @@
           <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки,
             <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <button class="find_hotels">Поиск гостиницы в Седоне</button>
-          <form class="finder_form" action="https://echo.htmlacademy.ru" method="POST">
-            <div class="finder_item">
-              <label for="date_in">Дата заезда:</label>
-              <input type="date" id="date_in" name="date_check" value="2017-04-24" class="date">
+          <button class="find-hotels button">Поиск гостиницы в Седоне</button>
+          <form class="finder-form" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="finder-item">
+              <label for="date-in">Дата заезда:</label>
+              <input type="date" id="date-in" name="date-check" value="2017-04-24" class="date">
             </div>
-            <div class="finder_item">
-              <label for="date_out">Дата выезда:</label>
-              <input type="date" id="date_out" name="date_checkout" value="2017-07-04" class="date">
+            <div class="finder-item">
+              <label for="date-out">Дата выезда:</label>
+              <input type="date" id="date-out" name="date-checkout" value="2017-07-04" class="date">
             </div>
-            <div class="finder_item">
-              <label for="lot_adults">Взрослые:</label>
+            <div class="finder-item">
+              <label for="lot-adults">Взрослые:</label>
               <div class="adults">
-                <button class="lot_min" type="button">-</button>
-                <input type="number" name="adults" value="2" min="0" id="lot_adults" class="number">
-                <button class="lot_max" type="button">+</button>
+                <button class="lot-min button" type="button">-</button>
+                <input type="number" name="adults" value="2" min="0" id="lot-adults" class="number">
+                <button class="lot-max button" type="button">+</button>
               </div>
             </div>
-            <div class="finder_item">
-              <label for="lot_kids">Дети:</label>
+            <div class="finder-item">
+              <label for="lot-kids">Дети:</label>
               <div class="kids">
-                <button class="lot_min" type="button">-</button>
-                <input type="number" name="kids" value="0" min="0" id="lot_kids" class="number">
-                <button class="lot_max" type="button">+</button>
+                <button class="lot-min button" type="button">-</button>
+                <input type="number" name="kids" value="0" min="0" id="lot-kids" class="number">
+                <button class="lot-max button" type="button">+</button>
               </div>
             </div>
-            <button class="search_hotels" type="submit">Найти</button>
+            <button class="search-hotels button" type="submit">Найти</button>
           </form>
         </section>
       </div>
@@ -126,7 +126,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <span class="tag_sedona">#visitSEDONA</span>
+      <span class="tag-sedona">#visitSEDONA</span>
       <div class="footer-social">
         <ul>
           <li>
@@ -142,7 +142,7 @@
       </div>
       <p class="footer-copyright">Website by
         <a href="https://htmlacademy.ru" aria-label="Сайт Академии">
-          <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon_html-academy">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-html-academy">
             <use xlink:href="#html-logo" />
           </svg>
         </a>

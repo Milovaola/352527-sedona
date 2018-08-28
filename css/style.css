@@ -85,8 +85,8 @@ a {
   line-height: 26px;
   text-align: center;
 }
-.lot_min,
-.lot_max {
+.lot-min,
+.lot-max {
   background-color: #f2f2f2;
   color: #a9a9a9;
   left: 523px;
@@ -98,18 +98,15 @@ a {
   line-height: 26px;
   text-align: center;
   font-weight: bold;
-  cursor: pointer;
 }
 
-.lot_min:hover,
-.lot_max:hover {
+.lot-min:hover,
+.lot-max:hover {
   color: #000000;
-  cursor: pointer;
 }
-.lot_min:active,
-.lot_max:active {
+.lot-min:active,
+.lot-max:active {
   color: #81b0cd;
-  cursor: pointer;
 }
 .number {
   left: 561px;
@@ -124,7 +121,7 @@ a {
   text-align: center;
   font-weight: bold;
   }
-.find_hotels {
+.find-hotels {
   background-color: #8d7d73;
   color: #ffffff;
   font-size: 21px;
@@ -136,39 +133,33 @@ a {
   width: 568px;
   height: 86px;
   outline: none;
-  cursor: pointer;
 }
-.find_hotels:hover {
+.find-hotels:hover {
   background-color: #6e5e54;
-  cursor: pointer;
 }
-.find_hotels:active {
+.find-hotels:active {
   background-color: #67574d;
   color: rgba(255, 255, 255, 0.3);
-  cursor: pointer;
 }
 
-.finder_item {
+.finder-item {
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
 }
-.finder_item input {
+.finder-item input {
   background-color: transparent;
 }
-.date_in, .date_out {
+.date-in, .date-out {
   background-color: #f7f7f7;
-  cursor: pointer;
 }
-.date_in:hover,
-.date_out:hover {
+.date-in:hover,
+.date-out:hover {
   background-color: #f0f0f0;
-  cursor: pointer;
 }
-.date_in:active,
-.date_out:active {
+.date-in:active,
+.date-out:active {
   background-color: #fdfdfd;
-  cursor: pointer;
 }
 .date {
   left: 523px;
@@ -181,7 +172,7 @@ a {
   font-weight: bold;
   outline: none;
     }
-.search_hotels {
+.search-hotels {
   background-color: #81b0cd;
   color: #ffffff;
   font-size: 21px;
@@ -193,21 +184,18 @@ a {
   top: 2451px;
   width: 458px;
   height: 58px;
-  cursor: pointer;
 }
-.search_hotels:hover {
+.search-hotels:hover {
   background-color: #6ca2c2;
-  cursor: pointer;
 }
-.search_hotels:active {
+.search-hotels:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
-  cursor: pointer;
 }
 .main-footer {
   background-color: rgba(249, 250, 245, 0.9);
 }
-.tag_sedona {
+.tag-sedona {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700px;
@@ -241,7 +229,7 @@ a {
   color: #ffffff;
 }
 .infrastructure,
-.type_of_apartmnets {
+.type-of-apartmnets {
   border: none;
   font-size: 16px;
   line-height: 21px;
@@ -249,7 +237,7 @@ a {
   text-align: left;
 }
 .infrastructure ul,
-.type_of_apartmnets ul {
+.type-of-apartmnets ul {
   list-style: none;
 }
 .filter-option {
@@ -284,14 +272,12 @@ input[class="price"] {
 }
 button.show {
   width: 141px;
-  cursor: pointer;
 }
 
 button.show:hover,
 button.show:active {
   background-color: #fff;
   color: #000;
-  cursor: pointer;
 }
 
 .graduation a {
@@ -324,17 +310,17 @@ button.show:active {
   line-height: 26px;
   font-weight: 700px;
   color: #000000;
-  cursor: pointer;
 }
 .catalog-item-title:hover {
   color: #6ca2c2;
-  cursor: pointer;
 }
 .catalog-item-title:active {
   color: rgba(0, 0, 0, 0.3);
-  cursor: pointer;
 }
 .button {
+  cursor: pointer;
+}
+.button-item {
   display: inline-block;
   outline: none;
   height: 27px;
@@ -344,35 +330,28 @@ button.show:active {
   line-height: 21px;
   font-weight: 700px;
   text-transform: uppercase;
-  cursor: pointer;
 }
 .button-more {
   width: 110px;
   background-color: #81b0cd;
-  cursor: pointer;
 }
 .button-more:hover {
   background-color: #6ca2c2;
-  cursor: pointer;
 }
 .button-more:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
-  cursor: pointer;
 }
 .button-reserve {
   width: 142px;
   background-color: #8d7d73;
-  cursor: pointer;
 }
 .button-reserve:hover {
   background-color: #6e5e54;
-  cursor: pointer;
 }
 .button-reserve:active {
   background-color: #67574d;
   color: rgba(255, 255, 255, 0.3);
-  cursor: pointer;
 }
 
 .icon {
@@ -381,15 +360,15 @@ button.show:active {
   height: 1px;
   fill: currentColor;
 }
-.icon_html-academy {
+.icon-html-academy {
   height: 39px;
   width: 113px;
   color: black
 }
-.icon_html-academy:hover {
+.icon-html-academy:hover {
   color: #81b3d2;
 }
-.icon_html-academy:active {
+.icon-html-academy:active {
   color: #bdbbbc;
 }
 /* ----- Сеточные стили ----- */
@@ -448,7 +427,7 @@ body {
   display: flex;
   align-items: center;
 }
-.real_city {
+.real-city {
   width: 400px;
   padding: 0 60px;
   box-sizing: border-box;
@@ -465,7 +444,7 @@ body {
   display: flex;
   align-items: center;
 }
-.bridge_of_devil {
+.bridge-of-devil {
   width: 400px;
   padding: 0 40px;
   display: border-box;
@@ -495,7 +474,7 @@ body {
 
 }
 
-.tag_sedona {
+.tag-sedona {
   width: 132px;
   margin: 0;
   margin-right: 260px;
@@ -524,13 +503,13 @@ body {
   margin-right: 114px;
 }
 .infrastructure ul,
-.type_of_apartmnets ul {
+.type-of-apartmnets ul {
   padding: 0;
 }
-.type_of_apartmnets {
+.type-of-apartmnets {
   width: 140px;
 }
-.price_of_day {
+.price-of-day {
   width: 317px;
   margin: 0;
   margin-left: auto;
@@ -544,7 +523,7 @@ body {
   margin-bottom: 66px;
 
 }
-.list_of_hotels {
+.list-of-hotels {
   width: 100%;
   display: flex;
 }
