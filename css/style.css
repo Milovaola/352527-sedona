@@ -19,14 +19,29 @@ a {
   color: #000000;
   background-color: #ffffff;
 }
-.main-navigation {
-  line-height: 26px;
-  color: #000000;
+.main-header {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  padding: 15px 0;
 
-  background-color: #ffff;
+}
+.mini-logo {
+  width: 140px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main-navigation {
+  padding-left: 0;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
 }
 .main-navigation a {
   color: #000000;
+  text-decoration: none;
 }
 .main-navigation a:hover {
   color: #81b3d2;
@@ -381,27 +396,7 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 auto;
-}
-.main-header {
-  width: 100%;
-  position: relative;
-
-
-}
-.mini-logo {
-  width: 140px;
-  align-self: flex-start;
-}
-
-.main-navigation {
-  background-color: #ffffff;
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  padding: 0 73px;
-  margin-bottom: -20px;
-  min-height: 56px;
+  padding: 0 0;
 }
 .preview {
   padding-top: 75px;
@@ -414,8 +409,10 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding: 0;
   margin-left: 350px;
   margin-right: 350px;
+  margin-bottom: 55px;
 }
 .reasons {
   width: 1200px;
@@ -447,18 +444,19 @@ body {
 .bridge-of-devil {
   width: 400px;
   padding: 0 40px;
-  display: border-box;
+  box-sizing: border-box;
 }
 .reason-item4 {
   display: flex;
   justify-content: space-between;
-  display: border-box;
+  box-sizing: border-box;
   margin-bottom: 59px;
 }
 .reason-item4-inner {
   padding: 49px 90px 65px;
 }
-.hidden {
+.hidden,
+.visually-hidden {
   display: none;
 }
 .modal-suggestion {
