@@ -16,12 +16,34 @@ body {
 a {
   text-decoration: none;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 0;
   color: #000000;
   background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 .main-header {
   width: 100%;
@@ -43,6 +65,7 @@ a {
   display: flex;
 }
 .main-navigation a {
+  font-weight: bold;
   color: #000000;
   text-decoration: none;
 }
@@ -279,6 +302,8 @@ a {
 .main-footer {
   display: flex;
   padding: 0px 101px 0px 131px;
+  justify-content: space-between;
+  align-items: center;
 }
 .tag-sedona {
   width: 132px;
@@ -291,15 +316,28 @@ a {
   text-transform: uppercase;
 }
 .footer-social {
-  width: 150px;
   text-align: center;
+  width: 160px;
 }
 .footer-social ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 37px;
+
   list-style: none;
 }
 .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
   background-color: #81b0cd;
   color: #f9faf5;
+
 }
 .social-button:hover {
   background-color: #6ca2c2;
@@ -308,11 +346,17 @@ a {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
 }
+.social-button:active path {
+  fill: rgba(242, 242, 242, 0.3);
+}
 .footer-copyright {
-  width: 200px;
   margin: 0;
   margin-left: auto;
-  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.footer-copyright a {
+  margin-left: 6px;
 }
 .filters-main {
   background-image: url(../img/background/filter_background.jpg);
