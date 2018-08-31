@@ -70,12 +70,12 @@
           <div class="price-of-day">
             <h3 class="price-of-day-title">Стоимость в сутки (Р):</h3>
             <div class="price-controls">
-            <label class="price-min">От
-              <input type="text" value="0">
-            </label>
-            <label class="price-max">До
-              <input type="text" value="3000">
-            </label>
+              <label class="price-min">От
+                <input type="text" value="0">
+              </label>
+              <label class="price-max">До
+                <input type="text" value="3000">
+              </label>
             </div>
             <div class="range-controls">
               <div class="scale">
@@ -89,16 +89,20 @@
         </form>
       </section>
       <section class="graduation">
-        <span class="search">Найдено: 3</span>
-        <h3 class="graduation-title">Сортировка</h3>
-        <div class="graduation-type">
-          <a class="graduation-type-current" href="#">По цене</a>
-          <a href="#">По типу</a>
-          <a href="#">По рейтингу</a>
-        </div>
-        <div class="arrows">
-          <a class="arrow-max" href="#">Больше</a>
-          <a class="arrow-min" href="#">Меньше</a>
+        <h2 class="search">Найдено: <span id="search-result">3</span></h2>
+        <div class="graduation-block">
+            <h3 class="graduation-title">Сортировка:</h3>
+          <div class="graduation-control">
+            <div class="graduation-type">
+            <a class="graduation-type-current" href="#">По цене</a>
+            <a href="#">По типу</a>
+            <a href="#">По рейтингу</a>
+          </div>
+          <div class="arrows">
+            <a class="arrow-max" href="#">Больше</a>
+            <a class="arrow-min" href="#">Меньше</a>
+          </div>
+          </div>
         </div>
       </section>
       <section class="catalog">
@@ -106,14 +110,16 @@
         <article class="list-of-hotels">
           <img src="img/content/amara_resort.jpg" width="135" height="90" alt="Amara Resort & Spa" class="foto1">
           <div class="catalog-item-description">
-            <a class="catalog-item-title" href="#">Amara Resort & Spa </a>
-            <div class="details">
-              <p>Гостиница</p>
-              <button class="button-item button-more button">Подробнее</button>
-            </div>
-            <div class="details">
-              <p>от 4000 р.</p>
-              <button class="button-item button-reserve button">Забронировать</button>
+            <a class="catalog-item-title" href="#">Amara Resort & Spa</a>
+            <div class="details-main">
+              <div class="details">
+                <p>Гостиница</p>
+                <button class="button-item button-more button">Подробнее</button>
+              </div>
+              <div class="details">
+                <p>от 4000 р.</p>
+                <button class="button-item button-reserve button">Забронировать</button>
+              </div>
             </div>
           </div>
           <div class="catalog-item-rating">
@@ -125,13 +131,15 @@
           <img src="img/content/desert_quail.jpg" width="135" height="90" alt="Desert Quail Inn" class="foto2">
           <div class="catalog-item-description">
             <a class="catalog-item-title" href="#">Desert Quail Inn</a>
-            <div class="details">
-              <p>Мотель</p>
-              <button class="button-item button-more button">Подробнее</button>
-            </div>
-            <div class="details">
-              <p>от 3000 р.</p>
-              <button class="button-item button-reserve button">Забронировать</button>
+            <div class="details-main">
+              <div class="details">
+                <p>Мотель</p>
+                <button class="button-item button-more button">Подробнее</button>
+              </div>
+              <div class="details">
+                <p>от 3000 р.</p>
+                <button class="button-item button-reserve button">Забронировать</button>
+              </div>
             </div>
           </div>
           <div class="catalog-item-rating">
@@ -143,13 +151,15 @@
           <img src="img/content/villas_at.jpg" width="135" height="90" alt="Villas at Poco Diablo" class="foto3">
           <div class="catalog-item-description">
             <a class="catalog-item-title" href="#">Villas at Poco Diablo</a>
-            <div class="details">
-              <p>Апартаменты</p>
-              <button class="button-item button-more button">Подробнее</button>
-            </div>
-            <div class="details">
-              <p>от 2000 р.</p>
-              <button class="button-item button-reserve button">Забронировать</button>
+            <div class="details-main">
+              <div class="details">
+                <p>Апартаменты</p>
+                <button class="button-item button-more button">Подробнее</button>
+              </div>
+              <div class="details">
+                <p>от 2000 р.</p>
+                <button class="button-item button-reserve button">Забронировать</button>
+              </div>
             </div>
           </div>
           <div class="catalog-item-rating">
