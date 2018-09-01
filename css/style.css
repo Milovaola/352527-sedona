@@ -702,20 +702,38 @@ a.graduation-type-current {
   margin-right: 5px;
 }
 .catalog-item-rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
   margin: 0;
+  margin-bottom: 30px;
   margin-right: 73px;
   margin-left: auto;
 
 }
 .value {
-  width: 110px;
-  padding: 5px 9px;
+
+  width: 84px;
+  padding: 3px;
+  padding-left: 16px;
+  padding-right: 14px;
   background-color: #f2f2f2;
   text-align: center;
+  line-height: 21px;
+  color: #727272;
+  margin: 0px;
 }
-.star {
-  background-image: url("../img/decor/star.svg");
+.star::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/decor/star.svg);
+  background-repeat: repeat-x;
+  width: 90px;
+  height: 17px;
+  right: -2px;
 }
+
 .icon {
   display: inline-block;
   width: 1px;
