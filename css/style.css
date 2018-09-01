@@ -566,7 +566,7 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   font-weight: 400px;
   color: rgba(0, 0, 0, 0.3);
-  border-bottom: 1px dotted;
+
 }
 .catalog {
   padding: 0px;
@@ -583,6 +583,7 @@ input[type="radio"].visually-hidden {
 .graduation-type a {
   margin: 0px;
   margin-right: 34px;
+  border-bottom: 1px dotted;
 }
 .graduation-type a:hover {
   color: #81b3d2;
@@ -603,9 +604,20 @@ a.graduation-type-current {
   font-weight: 400px;
 }
 .arrows {
-  margin: 0px;
-  align-self: flex-end;
+    margin: 0px;
+    display: flex;
+    width: 35px;
+    justify-content: space-around;
 }
+.arrow-max:hover polygon,
+.arrow-min:hover polyline {
+  fill: black;
+}
+.arrow-max:active polygon,
+.arrow-min:active polyline {
+  fill: #5496bd;
+}
+
 .catalog-item-title {
   margin: 0;
   padding: 0;
