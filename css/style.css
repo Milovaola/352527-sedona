@@ -300,15 +300,19 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
 }
 .main-footer {
-  display: flex;
+  margin: 0;
+  margin-top: 36px;
   padding: 0px 101px 0px 131px;
-  justify-content: space-between;
+  align-items: center;
+}
+.main-footer-container {
+  display: flex;
   align-items: center;
 }
 .tag-sedona {
-  width: 132px;
+  width: 136px;
   margin: 0;
-  margin-right: 260px;
+  margin-right: 256px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700px;
@@ -317,7 +321,7 @@ input[type="radio"].visually-hidden {
 }
 .footer-social {
   text-align: center;
-  width: 160px;
+  width: 150px;
 }
 .footer-social ul {
   display: flex;
@@ -351,6 +355,7 @@ input[type="radio"].visually-hidden {
 }
 .footer-copyright {
   margin: 0;
+  width: 198px;
   margin-left: auto;
   display: flex;
   align-items: center;
@@ -366,30 +371,75 @@ input[type="radio"].visually-hidden {
 }
 .filter {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   padding: 32px 73px;
   margin-bottom: 35px;
+
 }
 .infrastructure {
   width: 140px;
   margin: 0;
   margin-right: 114px;
+  border: none;
 }
 .type-of-apartmnets {
   width: 140px;
-}
-.infrastructure,
-.type-of-apartmnets {
   border: none;
+}
+.infrastructure legend,
+.type-of-apartmnets legend {
+  margin-top: 25px;
+
   font-size: 16px;
   line-height: 21px;
-  font-weight: 700px;
+  font-weight: 700px;;
   text-align: left;
 }
 .infrastructure ul,
 .type-of-apartmnets ul {
   list-style: none;
   padding: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: regular;
+}
+.filter-option {
+  margin-bottom: 30px;
+  padding-left: 40px;
+}
+.filter-option label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+
+  width: 20px;
+  height: 20px;
+  top: 0px;
+  left: -40px;
+  border: 2px solid;
+  border-radius: 2px;
+
+}
+
+.filter-input-checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0px;
+  left: -40px;
+  border: none;
+  background-image: url("../img/decor/checkbox-on.png");
+  padding-right: 18px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 .price-of-day {
   width: 317px;
@@ -643,12 +693,16 @@ a.graduation-type-current {
   margin: 0;
   margin-right: 73px;
   margin-left: auto;
+
 }
 .value {
   width: 110px;
   padding: 5px 9px;
   background-color: #f2f2f2;
   text-align: center;
+}
+.star {
+  background-image: url("../img/decor/star.svg");
 }
 .icon {
   display: inline-block;

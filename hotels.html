@@ -28,42 +28,37 @@
         <h2 class="visually-hidden" style="display: none">Фильтр гостиниц</h2>
         <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
           <fieldset class="infrastructure">
-            <legend>Инфраструктура</legend>
+            <legend>Инфраструктура:</legend>
             <ul>
               <li class="filter-option">
-                <label>
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="pool" checked> Бассейн
-                </label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="pool" checked>
+                <label for="pool">Бассейн</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking"> Парковка
-                </label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="parking">
+                  <label for="parking">Парковка</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi"> wi-fi
-                </label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="wi-fi">
+                  <label for="wi-fi">wi-fi</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="type-of-apartmnets">
-            <legend>Тип жилья</legend>
+            <legend>Тип жилья:</legend>
             <ul>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" checked> Гостиница
-                </label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id ="hotel" checked>
+               <label for="hotel">Гостиница</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" checked> Мотель
-                </label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="motel" checked>
+                  <label for="motel">Мотель</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartmnets" checked> Апартаменты
-                </label>
+                <label class="filter-label">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartmnets" id="apartmnets" checked>
+                  <label for="apartmnets">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
@@ -101,8 +96,18 @@
               <a href="#">По рейтингу</a>
             </div>
             <div class="arrows">
-              <a class="arrow-max" href="#">Больше</a>
-              <a class="arrow-min" href="#">Меньше</a>
+              <a class="arrow-max" href="#">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+               <polygon fill="#cacaca" points="5.5,0 0,10 11,10 "/>
+               </svg>
+</a>
+              <a class="arrow-min" href="#">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+               <polyline fill="#cacaca" points="5.5,10 0,0 11,0 "/>
+               </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -126,7 +131,7 @@
           </div>
           <div class="catalog-item-rating">
             <p class="value">Рейтинг: 8,5</p>
-            <!--звездочки-->
+            <div class="star"></div>
           </div>
         </article>
         <article class="list-of-hotels">
@@ -172,6 +177,7 @@
       </section>
     </main>
     <footer class="main-footer">
+      <div class="main-footer-container">
       <span class="tag-sedona">#visitSEDONA</span>
       <div class="footer-social">
         <ul>
@@ -214,6 +220,7 @@
           </svg>
         </a>
       </p>
+    </div>
     </footer>
   </div>
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none">
