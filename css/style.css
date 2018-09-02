@@ -115,16 +115,20 @@ input[type="radio"].visually-hidden {
 }
 .reasons h2 {
   font-size: 21px;
-  line-height: 26px;
+  line-height: 21px;
+  margin: 0px;
 }
 .reasons p {
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 30px;
 }
 .reason-item1 {
   display: flex;
   align-items: center;
-  margin-bottom: 160px;
+  margin-bottom: 60px;
 }
 .reason-item1, .reason-item3 {
   background-color: #84b5d3;
@@ -149,6 +153,27 @@ input[type="radio"].visually-hidden {
   padding-left: 73px;
   padding-right: 63px;
   margin-bottom: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.house {
+  background-image: url(../img/decor/icon-1.svg);
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 72px;
+}
+.food {
+  background-image: url(../img/decor/icon-3.svg);
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 72px;
+}
+.souvenir {
+  background-image: url(../img/decor/icon-2.svg);
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 76px;
 }
 .reason-item3 {
   display: flex;
@@ -163,7 +188,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  margin-bottom: 59px;
   background-color: #eeeeee;
   color: #333333;
   text-align: center;
@@ -299,7 +323,20 @@ input[type="radio"].visually-hidden {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
 }
+.footer-on-map {
+  position: absolute;
+}
 .main-footer {
+    margin: 0;
+    padding: 36px 101px 0px 131px;
+    align-items: center;
+    position: absolute;
+    top: 473px;
+    width: 968px;
+    background-color: white;
+    opacity: 0.9;
+}
+.main-footer-inner {
   margin: 0;
   margin-top: 36px;
   padding: 0px 101px 0px 131px;
@@ -529,7 +566,7 @@ input[type="radio"].visually-hidden {
   display: block;
   margin: 0 auto;
   padding: 6px 35px;
-
+  cursor: pointer;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
@@ -640,6 +677,7 @@ a.graduation-type-current {
 }
 .button {
   cursor: pointer;
+  border: none;
 }
 .button-item {
   display: inline-block;
@@ -653,9 +691,8 @@ a.graduation-type-current {
   text-transform: uppercase;
 }
 .button-more {
-  padding: 0px;
+  padding: 5px 17px;
   margin: 0px;
-  width: 110px;
   background-color: #81b0cd;
 }
 .button-more:hover {
@@ -666,7 +703,7 @@ a.graduation-type-current {
   color: rgba(255, 255, 255, 0.3);
 }
 .button-reserve {
-  width: 142px;
+  padding: 5px 16px;
   background-color: #8d7d73;
 }
 .button-reserve:hover {
@@ -705,7 +742,6 @@ a.graduation-type-current {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
   margin: 0;
   margin-bottom: 30px;
   margin-right: 73px;
@@ -713,8 +749,6 @@ a.graduation-type-current {
 
 }
 .value {
-
-  width: 84px;
   padding: 3px;
   padding-left: 16px;
   padding-right: 14px;
@@ -724,16 +758,24 @@ a.graduation-type-current {
   color: #727272;
   margin: 0px;
 }
-.star::before {
-  content: "";
-  position: absolute;
+.star {
   background-image: url(../img/decor/star.svg);
-  background-repeat: repeat-x;
-  width: 90px;
+  background-repeat: space;
   height: 17px;
-  right: -2px;
-}
 
+}
+.star-high-rating {
+  width: 89px;
+  margin-left: 21px;
+}
+.star-medium-rating {
+  width: 66px;
+  margin-left: 46px;
+}
+.star-low-rating {
+  width: 42px;
+  margin-left: 70px;
+}
 .icon {
   display: inline-block;
   width: 1px;
