@@ -60,9 +60,8 @@ input[type="radio"].visually-hidden {
 }
 .main-navigation {
   padding-left: 0;
-  justify-content: space-around;
-  align-items: center;
   display: flex;
+  padding: 0px 72px;
 }
 .main-navigation a {
   font-weight: bold;
@@ -78,6 +77,15 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-current a {
   color: #766357;
+}
+a.site-navigation:first-child {
+  margin-right: 148px;
+}
+a.site-navigation:nth-child(2) {
+  margin-right: 390px;
+}
+a.site-navigation:nth-child(3) {
+  margin-right: 162px;
 }
 .preview {
   padding-top: 75px;
@@ -344,11 +352,13 @@ input[type="radio"].visually-hidden {
 }
 .main-footer-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 .tag-sedona {
   width: 136px;
   margin: 0;
+  padding-top: 13px;
+  padding-left: 3px;
   margin-right: 256px;
   font-size: 21px;
   line-height: 26px;
@@ -396,21 +406,24 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
   display: flex;
   align-items: center;
+  margin-top: -3px;
 }
 .footer-copyright a {
-  margin-left: 6px;
+  padding-left: 10px;
+  padding-top: 7px;
 }
 .filters-main {
   background-image: url(../img/background/filter_background.jpg);
   background-repeat: no-repeat;
   background-color: #5496bd;
+  background-size: cover;
   color: #ffffff;
 }
 .filter {
   display: flex;
   flex-wrap: wrap;
-  padding: 32px 73px;
-  margin-bottom: 35px;
+  padding: 31px 73px 0px;
+  margin-bottom: 31px;
 
 }
 .infrastructure {
@@ -418,15 +431,15 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-right: 114px;
   border: none;
+  padding: 0px;
 }
 .type-of-apartmnets {
   width: 140px;
   border: none;
+  padding: 0px;
 }
 .infrastructure legend,
 .type-of-apartmnets legend {
-  margin-top: 25px;
-
   font-size: 16px;
   line-height: 21px;
   font-weight: 700px;;
@@ -438,10 +451,10 @@ input[type="radio"].visually-hidden {
   padding: 0;
   font-size: 14px;
   line-height: 21px;
-  font-weight: regular;
+  margin-top: 23px;
 }
 .filter-option {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   padding-left: 40px;
 }
 .filter-option label {
@@ -479,17 +492,19 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 .price-of-day {
-  width: 317px;
+  width: 320px;
   margin: 0;
   margin-left: auto;
   color: #ffffff;
   text-transform: uppercase;
 }
 .price-of-day-title {
-  margin-bottom: 9px;
+  margin: 0px;
+  padding: 0px;
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
+  margin-left: 7px;
 }
 .price-controls {
   height: 36px;
@@ -519,7 +534,7 @@ input[type="radio"].visually-hidden {
 .price-controls .price-min,
 .price-controls .price-max {
   width: 90px;
-  padding-left: 65px;
+  padding-left: 61px;
 }
 .price-controls input {
   width: 50px;
@@ -565,13 +580,13 @@ input[type="radio"].visually-hidden {
 .show {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
+  padding: 6px 30px;
   cursor: pointer;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-
+  outline: none;
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -582,9 +597,10 @@ input[type="radio"].visually-hidden {
 }
 .graduation {
   display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
   padding:  0 73px;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
   margin-bottom: 30px;
   border-bottom: #f2f2f2 solid 1px;
 }
@@ -611,7 +627,8 @@ input[type="radio"].visually-hidden {
   margin-bottom: 36px;
 }
 .search {
-  margin-right: 50px;
+  margin: 0px;
+  margin-right: 48px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700px;
@@ -619,7 +636,7 @@ input[type="radio"].visually-hidden {
 }
 .graduation-type a {
   margin: 0px;
-  margin-right: 34px;
+  margin-right: 29px;
   border-bottom: 1px dotted;
 }
 .graduation-type a:hover {
@@ -643,8 +660,9 @@ a.graduation-type-current {
 .arrows {
     margin: 0px;
     display: flex;
-    width: 35px;
-    justify-content: space-around;
+    width: 34px;
+    justify-content: space-between;
+    align-items: center;
 }
 .arrow-max:hover polygon,
 .arrow-min:hover polyline {
@@ -678,20 +696,19 @@ a.graduation-type-current {
 .button {
   cursor: pointer;
   border: none;
+  outline: none;
 }
 .button-item {
   display: inline-block;
   outline: none;
-  height: 27px;
   color: #ffffff;
-  text-align: center;
   font-size: 14px;
   line-height: 21px;
   font-weight: 800px;
   text-transform: uppercase;
 }
 .button-more {
-  padding: 5px 17px;
+  padding: 3px 12px;
   margin: 0px;
   background-color: #81b0cd;
 }
@@ -703,7 +720,7 @@ a.graduation-type-current {
   color: rgba(255, 255, 255, 0.3);
 }
 .button-reserve {
-  padding: 5px 16px;
+  padding: 3px 11px;
   background-color: #8d7d73;
 }
 .button-reserve:hover {
@@ -750,8 +767,8 @@ a.graduation-type-current {
 }
 .value {
   padding: 3px;
-  padding-left: 16px;
-  padding-right: 14px;
+  padding-left: 18px;
+  padding-right: 10px;
   background-color: #f2f2f2;
   text-align: center;
   line-height: 21px;
@@ -766,11 +783,11 @@ a.graduation-type-current {
 }
 .star-high-rating {
   width: 89px;
-  margin-left: 21px;
+  margin-left: 20px;
 }
 .star-medium-rating {
   width: 66px;
-  margin-left: 46px;
+  margin-left: 45px;
 }
 .star-low-rating {
   width: 42px;
