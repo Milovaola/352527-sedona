@@ -33,7 +33,8 @@
       <section class="reasons">
         <section class="reason-item1">
           <article class="real-city">
-            <h2>Настоящий <br> городок</h2>
+            <h2>Настоящий
+              <br> городок</h2>
             <p>— №1 —</p>
             <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
           </article>
@@ -82,45 +83,50 @@
             <h2>Мало
               <br> туристов</h2>
             <p>— №5 — </p>
-            <p>Большинство едет в Гранд каньон и толпится там</p>
+            <p>Большинство едет в Гранд каньон
+              <br> и толпится там</p>
           </article>
         </section>
       </section>
-      <div class="hidden">
-        <section class="modal modal-suggestion">
-          <h2>Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки,
-            <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <button class="find-hotels button">Поиск гостиницы в Седоне</button>
-          <form class="finder-form" action="https://echo.htmlacademy.ru" method="POST">
-            <div class="finder-item">
-              <label for="date-in">Дата заезда:</label>
-              <input type="date" id="date-in" name="date-check" value="2017-04-24" class="date">
+      <section class="modal modal-suggestion">
+        <h2>Заинтересовались?</h2>
+        <p>Укажите предполагаемые даты поездки,
+          <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="find-hotels button">Поиск гостиницы в Седоне</button>
+        <form class="finder-form " action="https://echo.htmlacademy.ru" method="POST">
+          <div class="finder-item-date">
+          <div class="finder-item-date-in">
+            <label for="date-in">Дата заезда:</label>
+            <input type="date" id="date-in" name="date-check" value="2017-04-24" class="date">
+            <div class="calendar"></div>
+          </div>
+          <div class="finder-item-date-out">
+            <label for="date-out">Дата выезда:</label>
+            <input type="date" id="date-out" name="date-checkout" value="2017-07-04" class="date">
+            <div class="calendar"></div>
+          </div>
+        </div>
+        <div class="finder-item-guests">
+          <div class="finder-item-adults ">
+            <label for="lot-adults">Взрослые:</label>
+            <div class="adults">
+              <button class="lot-min button" type="button">-</button>
+              <input type="number" name="adults" value="2" min="0" id="lot-adults" class="number">
+              <button class="lot-max button" type="button">+</button>
             </div>
-            <div class="finder-item">
-              <label for="date-out">Дата выезда:</label>
-              <input type="date" id="date-out" name="date-checkout" value="2017-07-04" class="date">
+          </div>
+          <div class="finder-item-kids">
+            <label for="lot-kids">Дети:</label>
+            <div class="kids">
+              <button class="lot-min button" type="button">-</button>
+              <input type="number" name="kids" value="0" min="0" id="lot-kids" class="number">
+              <button class="lot-max button" type="button">+</button>
             </div>
-            <div class="finder-item">
-              <label for="lot-adults">Взрослые:</label>
-              <div class="adults">
-                <button class="lot-min button" type="button">-</button>
-                <input type="number" name="adults" value="2" min="0" id="lot-adults" class="number">
-                <button class="lot-max button" type="button">+</button>
-              </div>
-            </div>
-            <div class="finder-item">
-              <label for="lot-kids">Дети:</label>
-              <div class="kids">
-                <button class="lot-min button" type="button">-</button>
-                <input type="number" name="kids" value="0" min="0" id="lot-kids" class="number">
-                <button class="lot-max button" type="button">+</button>
-              </div>
-            </div>
-            <button class="search-hotels button" type="submit">Найти</button>
-          </form>
-        </section>
-      </div>
+          </div>
+        </div>
+          <button class="search-hotels button" type="submit">Найти</button>
+        </form>
+      </section>
     </main>
     <div class="footer-on-map">
       <div class="map">
