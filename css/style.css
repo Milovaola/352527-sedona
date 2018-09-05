@@ -105,7 +105,7 @@ a.site-navigation:nth-child(3) {
   padding: 0;
   margin-left: 350px;
   margin-right: 350px;
-  margin-bottom: 48px;
+  margin-bottom: 49px;
 }
 .info h1 {
   font-size: 21px;
@@ -134,7 +134,7 @@ a.site-navigation:nth-child(3) {
 .reason-item1 {
   display: flex;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 62px;
 }
 .real-city h2 {
   margin-top: 5px;
@@ -166,7 +166,7 @@ a.site-navigation:nth-child(3) {
 .reason-item2-inner {
   padding-left: 55px;
   padding-right: 55px;
-  margin-bottom: 83px;
+  margin-bottom: 79px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -212,10 +212,9 @@ a.site-navigation:nth-child(3) {
   box-sizing: border-box;
 }
 .bridge-of-devil h2 {
-  padding-top: -30px;
-  margin-top: 6px;
+  margin-top: 10px;
   margin-bottom: 28px;
-  margin-left: 1px;
+  margin-left: 3px;
 }
 .bridge-of-devil p {
   padding-bottom: 6px;
@@ -226,7 +225,7 @@ a.site-navigation:nth-child(3) {
   background-color: #eeeeee;
   color: #333333;
   text-align: center;
-  margin-bottom: 55px;
+  margin-bottom: 53px;
 }
 .reason-item4-inner {
   margin-bottom: 42px;
@@ -245,8 +244,8 @@ a.site-navigation:nth-child(3) {
   padding-right: 6px;
 }
 .reason-item4-inner h2 {
-  margin-top: 47px;
-  margin-left: -1px;
+  margin-top: 50px;
+  margin-left: 0px;
 }
 .hidden,
 .visually-hidden {
@@ -254,6 +253,30 @@ a.site-navigation:nth-child(3) {
 }
 .modal {
   position: relative;
+}
+@keyframes bounce   {
+  0% {
+    transform: translateY(-50px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+.modal-find {
+  display: none;
+}
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
 }
 .modal h2 {
     font-size: 30px;
@@ -277,23 +300,20 @@ a.site-navigation:nth-child(3) {
   padding: 0 313px;
 }
 .finder-form {
-  display: flex;
   flex-direction: column;
   position: absolute;
   top: 240px;
   z-index: 1;
   background-color: #ffffff;
-  padding-top: 55px;
-  padding-bottom: 55px;
-  width: 569px;
+  padding: 55px;
+  width: 570px;
   font-weight: bold;
+  box-sizing: border-box;
 }
 .lot-min,
 .lot-max {
   background-color: #f2f2f2;
   color: #a9a9a9;
-  left: 523px;
-  top: 2359px;
   width: 38px;
   height: 38px;
   outline: none;
@@ -312,8 +332,6 @@ a.site-navigation:nth-child(3) {
   color: #81b0cd;
 }
 .number {
-  left: 561px;
-  top: 2359px;
   width: 38px;
   height: 36px;
   outline: none;
@@ -324,16 +342,15 @@ a.site-navigation:nth-child(3) {
   text-align: center;
   font-weight: bold;
   border: none;
+  -webkit-appearance: none;
   }
 .find-hotels {
   background-color: #8d7d73;
   color: #ffffff;
-  font-size: 19px;
+  font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
-  left: 356px;
-  top: 2083px;
-  padding: 30px 136px;
+  padding: 31px 122px;
   margin: 0px;
 }
 .find-hotels:hover {
@@ -343,7 +360,14 @@ a.site-navigation:nth-child(3) {
   background-color: #67574d;
   color: rgba(255, 255, 255, 0.3);
 }
-
+.row-date {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  align-items: center;
+  padding-left: 3px;
+  padding-top: 1px;
+}
 .finder-item {
   font-size: 14px;
   line-height: 26px;
@@ -355,10 +379,7 @@ a.site-navigation:nth-child(3) {
 .finder-item-guests {
   display: flex;
   justify-content: space-between;
-  padding-left: 55px;
-  padding-right: 55px;
-  width: 460px;
-  margin-bottom: 57px;
+  margin-bottom: 54px;
 }
 .finder-item-adults,
 .finder-item-kids {
@@ -367,13 +388,20 @@ a.site-navigation:nth-child(3) {
 }
 .finder-item-date-in,
 .finder-item-date-out {
-margin-bottom: 40px;
-margin-left: 55px;
-position: relative;
+
+  position: relative;
+  width: 346px;
+  height: 38px;
 }
 .kids,
 .adults {
   display: flex;
+}
+.adults {
+  margin-left: 42px;
+}
+.kids {
+  margin-left: 25px;
 }
 .date-in, .date-out {
   background-color: #f7f7f7;
@@ -387,44 +415,66 @@ position: relative;
   background-color: #fdfdfd;
 }
 .date {
-  left: 113px;
-  top: 0px;
-  width: 330px;
-  height: 38px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
   color: #000000;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
   outline: none;
   padding-left: 8px;
+  -webkit-appearance: none;
+  border: 2px solid #f2f2f2;
+  background-color: #f2f2f2;
+    }
+    .date:hover {
+    border: 2px solid #ebebeb;
+  background-color: #ebebeb;
+    }
+    .date:focus {
+    border: 2px solid #ebebeb;
+    background-color: #ffffff;
     }
 .calendar {
   position: absolute;
-  background-image: url("../img/decor/calendar.png");
-  width: 22px;
-  height: 22px;
-  top: 6px;
-  left: 406px;
-  background-repeat: no-repeat;
+    height: 100%;
+    width: 21px;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
 }
-.calendar:hover {
-  background-color: #000000;
-}
-.calendar:active {
-  background-color: #81b0cd;
+input[type="text"]::placeholder,
+input[type="number"]::placeholder {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
+.icon.icon-calendar {
+  height: 22px;
+  width: 21px;
+  color: #bdbbbc;
+}
+.icon.icon-calendar:hover {
+  color: #000000;
+}
+.icon.icon-calendar:active {
+  color: #81b0cd;
+}
 .search-hotels {
   background-color: #81b0cd;
   color: #ffffff;
-  font-size: 19px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: 700px;
   text-transform: uppercase;
   outline: none;
-  margin-left: 56px;
-  margin-right: 56px;
-  padding: 18px 194px;
+  padding: 17px 193px;
 }
 .search-hotels:hover {
   background-color: #6ca2c2;
