@@ -355,6 +355,7 @@ a.site-navigation:nth-child(3) {
 }
 
 .reason-item4-inner p {
+    max-width: 280px;
     margin-top: 8px;
     margin-left: 2px;
     padding: 0 6px 0 0
