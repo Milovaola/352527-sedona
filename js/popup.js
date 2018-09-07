@@ -4,3 +4,4 @@ var link = document.querySelector(".find-hotels");
       evt.preventDefault();
       popup.classList.toggle("modal-show");
     });
+    var mapPopup = document.querySelector(".modal-map");
