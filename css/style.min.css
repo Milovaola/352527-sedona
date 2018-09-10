@@ -443,7 +443,8 @@ a.site-navigation:nth-child(3) {
     font-weight: 700
 }
 
-.icon.icon-calendar:hover,.lot-max:hover,.lot-min:hover {
+.icon.icon-calendar:hover,.lot-max:hover,.lot-min:hover,
+.icon.icon-calendar:focus,.lot-max:focus,.lot-min:focus {
     color: #000
 }
 
@@ -463,11 +464,17 @@ a.site-navigation:nth-child(3) {
     font-weight: 700;
     border: 0;
     -webkit-appearance: none;
-    outline: 0;
     background-color: #f2f2f2;
     color: #000;
     font-size: 14px;
-    padding: 0
+    padding: 0;
+    outline: 0
+}
+.number:hover,
+.number:focus,
+.number:active {
+  background-color: #f2f2f2;
+    color: #000;
 }
 
 .find-hotels {
@@ -581,7 +588,8 @@ a.site-navigation:nth-child(3) {
     outline: 0
 }
 
-.date:hover {
+.date:hover,
+.date:focus {
     border: 2px solid #ebebeb;
     background-color: #ebebeb
 }
@@ -652,7 +660,8 @@ input[type=number]::placeholder,input[type=text]::placeholder {
     font-family: "PT Sans",Arial,sans-serif
 }
 
-.search-hotels:hover {
+.search-hotels:hover,
+.search-hotels:focus {
     background-color: #6ca2c2
 }
 
@@ -757,7 +766,8 @@ input[type=number]::placeholder,input[type=text]::placeholder {
     width: 48px
 }
 
-.social-button:hover {
+.social-button:hover,
+.search-hotels:focus {
     background-color: #6ca2c2
 }
 
@@ -985,7 +995,8 @@ input[type=number]::placeholder,input[type=text]::placeholder {
     font-family: "PT Sans",Arial,sans-serif
 }
 
-.show:hover {
+.show:hover,
+.show:focus {
     color: #000;
     background: #fff
 }
@@ -1130,6 +1141,7 @@ a.graduation-type-current {
 
 .button-item {
     display: inline-block;
+    vertical-align: middle;
     color: #fff;
     font-size: 14px;
     line-height: 21px;
@@ -1147,7 +1159,8 @@ a.graduation-type-current {
     background-color: #81b0cd
 }
 
-.button-more:hover {
+.button-more:hover,
+.button-more:focus {
     background-color: #6ca2c2
 }
 
@@ -1161,7 +1174,8 @@ a.graduation-type-current {
     background-color: #8d7d73
 }
 
-.button-reserve:hover {
+.button-reserve:hover,
+.button-reserve:focus {
     background-color: #6e5e54
 }
 
@@ -1254,6 +1268,7 @@ a.graduation-type-current {
 
 .icon {
     display: inline-block;
+    vertical-align: baseline;
     width: 1px;
     height: 1px;
     fill: currentColor
